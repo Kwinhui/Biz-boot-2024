@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        # 테이블을 보여줘
+        show_sql: true
+        # 테이블을 이쁘게 보여줘
+        format_sql: true
+        # 필수 mysql8에 맞도록 변환해줘
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bookdb
+    username: root
+    password: '!Biz8080'

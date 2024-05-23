@@ -1,0 +1,2 @@
+-- bookDB
+CREATE DATABASE bookDB;
